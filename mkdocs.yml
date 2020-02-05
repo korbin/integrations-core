@@ -1,0 +1,84 @@
+# Project information
+site_name: Agent Integrations
+site_description: The home of Agent Integrations developer documentation
+site_author: Datadog
+site_url: https://datadoghq.dev/integrations-core/
+
+# Repository
+repo_name: datadog/integrations-core
+repo_url: https://github.com/DataDog/integrations-core
+edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; Datadog, Inc. 2020-present'
+
+# Configuration
+docs_dir: docs/developer
+site_dir: site
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    primary: deep purple
+    accent: deep purple
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: images/favicon.ico
+  logo: images/logo.svg
+
+# Customization
+extra:
+  feature:
+    tabs: true
+  social:
+    - type: globe
+      link: https://www.datadoghq.com/blog/engineering/
+    - type: github-alt
+      link: https://github.com/DataDog
+    - type: twitter
+      link: https://twitter.com/datadoghq
+    - type: instagram
+      link: https://www.instagram.com/datadoghq
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
